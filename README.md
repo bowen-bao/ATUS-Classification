@@ -14,6 +14,9 @@ The American Time Use Survey is a dataset monitoring time use in the US. The dat
 
 Decision Tree provided the best predictive power with a 0.60 accuracy score. The variables that were the most influential in prediction are time of day, location, and age of household members. Logistic Regression would have been a second-best model with a 0.40 accuracy score. However, this model was too computationally expensive for large datasets. Future work extending this project would be to expand the database to include the 15-year dataset extending from 2013 – 2018 and to do a separate analysis using the 4-code and 6-code activity lexicons. Although given the subtle differences in the higher specificity categories, it would be harder for the model to predict accurately. 
 
+'analysis.py' is the file used to import data, merge, clean, and analyze. This file contains 514 lines of code.
+I put print statements to print the output of results. 
+
 The American Time Use Survey is a dataset published by the Department of Labor Statistics and conducted by the US Census Bureau monitoring time use in the US. The data measures how people of different demographics spent time throughout the day. Individuals are randomly selected from a subset of households that have completed their interviews for the Current Population Survey (CPS). Respondents are interviewed one time about how they spent their time on the previous day, where they were, and whom they were with. 
 
 There are 8 datasets total and four that were used are: 
@@ -22,3 +25,9 @@ There are 8 datasets total and four that were used are:
 2.	Roster file: Information about household members and their children (under 18) as well as information such as age and sex.
 3.	Activity file: information about how ATUS respondents spent their diary day. This includes activity codes, activity start and stop times, and locations
 4.	Who file: codes that indicate who was present during each activity
+
+These are the files: 
+'atusresp_2018.csv' labor force status and earnings
+'atusrost_2018.csv' household members info
+'atusact_2018.csv' activity diary
+'atuswho_2018.csv' who was present during each activity
